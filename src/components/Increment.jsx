@@ -4,7 +4,6 @@ export default class Increment extends Component {
 
   handleIncrement = (e) => {
     e.preventDefault();
-   
     this.props.setState({
       count:  this.props.count + 1
     })

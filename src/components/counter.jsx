@@ -11,8 +11,6 @@ class Counter extends Component {
     }
   }
 
-  
-
   handleCleanState = (e) => {
     e.preventDefault();
     this.setState({
@@ -22,7 +20,6 @@ class Counter extends Component {
   }
   
   render() {
-    
     let count = this.state.count;
 
     return  (
