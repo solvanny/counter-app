@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Counter from './components/Counter';
 import ButtonReset from './components/ButtonReset';
+import NavBar  from './components/NavBar';
 
 class App extends Component {
   constructor() {
@@ -45,7 +46,9 @@ class App extends Component {
   render() {
     return (
       <div className="row mt-2">
+      
         <div className="container mt-3" >
+          <NavBar getState={this.getState}/>
           <ButtonReset 
             counters={this.state.counters}
             getState={this.getState}

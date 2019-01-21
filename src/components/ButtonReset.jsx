@@ -4,18 +4,15 @@ export default class ButtonReset extends Component {
 
   handleReset = (e) => {
     e.preventDefault();
-    let state = this.props.getState();
+    let state = this.props.counters;
     for (let i = 1; i <= state.size; i++) {
       state = state.set(i, 0);
     }
-
-    this.props.changeState(state)
+    this.props.changeState(state);
   }
   render() {
     return (
-      <div className="col col-sm-3">
-          <button className="btn btn-danger btn-sm" onClick={this.handleReset}>Delete</button>
-        </div>
+        <button className="btn btn-warning btn-sm" onClick={this.handleReset}>Reset</button>
     )
   }
 }
