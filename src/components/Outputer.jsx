@@ -4,9 +4,10 @@ export default class Outputer extends Component {
   render() {
     let count = this.props.counter;
     return (
-      <div className="col col-sm-2">
-        <span className="text-success font-weight-bold">{count === 0 ? <span className="text-warning font-weight-bold"> { 'Zero'} </span>: count}</span>
-      </div>
+      <span 
+        className="text-success font-weight-bold"> 
+        {count === 0 ? <span className="text-warning font-weight-bold"> { 'Zero'} </span>: count}
+      </span>
     )
   }
 }

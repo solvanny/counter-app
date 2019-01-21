@@ -46,7 +46,6 @@ class App extends Component {
   render() {
     return (
       <div className="row mt-2">
-      
         <div className="container mt-3" >
           <NavBar getState={this.getState}/>
           <ButtonReset 
@@ -54,7 +53,10 @@ class App extends Component {
             getState={this.getState}
             changeState={this.changeState}
           />
+     
           { this.renderMap(this.state.counters) }
+ 
+          
         </div>
       </div>
     );

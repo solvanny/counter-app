@@ -8,9 +8,11 @@ export default class Delete extends Component {
   }
   render() {
     return (
-      <div className="col col-sm-3">
-          <button className="btn btn-danger btn-sm" onClick={() => this.handleDelete(this.props.id)}>Delete</button>
-        </div>
+      <button
+        className="btn btn-danger btn-sm" 
+        onClick={() => this.handleDelete(this.props.id)} > 
+        <i className="far fa-trash-alt"> </i>
+      </button>
     )
   }
 }
